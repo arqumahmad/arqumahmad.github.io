@@ -1,7 +1,7 @@
 // data.js
 const experience = [
   {
-    role: 'Digital Solution Expert (Manufacturing) – Future Factory Program (CTIO)',
+    role: 'Digital Solution Expert (Manufacturing) – Future Factory Program (CIO)',
     org: 'Leonardo S.p.A',
     location: 'Genova, Italy',
     period: 'Jan 2023 – Present',
