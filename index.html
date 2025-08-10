@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arqum Ahmad • Industry 4.0 & IIoT Expert</title>
+  <meta name="description" content="Portfolio of Arqum Ahmad — Industry 4.0 & Digital Transformation strategist, public speaker, and IIoT expert." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body class="bg-ink text-white selection:bg-white/20">
+  <!-- Animated background blobs -->
+  <div class="fixed inset-0 -z-20 overflow-hidden">
+    <div class="blob top-[-10%] left-[-10%] w-[35rem] h-[35rem] rounded-full" style="background: radial-gradient(circle at 30% 30%, #7c3aed, #3b82f6 60%, transparent 70%)"></div>
+    <div class="blob bottom-[-10%] right-[-10%] w-[40rem] h-[40rem] rounded-full" style="background: radial-gradient(circle at 60% 60%, #22d3ee, #a855f7 60%, transparent 70%); animation-delay: -6s"></div>
+    <div class="blob top-[30%] right-[15%] w-[28rem] h-[28rem] rounded-full" style="background: radial-gradient(circle at 50% 50%, #14b8a6, #6366f1 60%, transparent 70%); animation-delay: -12s"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-40 w-full">
+    <nav class="w-full flex items-center justify-between px-6 py-3 glass mt-4 rounded-none">
+      <!-- Left: Logo -->
+      <a href="#home" class="flex items-center gap-3">
+        <img src="src/assets/LOGO.png?v=1" alt="Arqum Ahmad logo" class="h-20 w-auto"/>
+      </a>
+      <!-- Center: Navigation Links -->
+      <div class="hidden md:flex items-center gap-6 text-sm flex-1 justify-center">
+        <a href="#about" class="hover:opacity-80">About</a>
+        <a href="#experience" class="hover:opacity-80">CV</a>
+        <a href="#events" class="hover:opacity-80">Events</a>
+        <a href="#articles" class="hover:opacity-80">Articles</a>
+        <a href="#contact" class="hover:opacity-80">Contact</a>
+      </div>
+      <!-- Right: LinkedIn -->
+      <div class="hidden md:flex items-center gap-2">
+        <a href="https://linkedin.com/in/arqumahmad" target="_blank" class="rounded-full border border-white/20 px-3 py-1 hover:bg-white/10 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-[#0A66C2]"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76s.78-1.76 1.75-1.76 1.75.79 1.75 1.76-.78 1.76-1.75 1.76zm13.5 11.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.89v1.36h.04c.4-.75 1.37-1.54 2.82-1.54 3.01 0 3.57 1.98 3.57 4.56v5.62z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+      <button id="menuBtn" aria-label="Menu" class="md:hidden rounded-lg border border-white/15 px-2 py-1">☰</button>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="mx-auto hidden max-w-7xl px-4">
+      <div class="glass px-4 py-3 mb-4 flex flex-col gap-3 md:hidden">
+        <a href="#about" class="hover:opacity-80">About</a>
+        <a href="#experience" class="hover:opacity-80">CV</a>
+        <a href="#events" class="hover:opacity-80">Events</a>
+        <a href="#articles" class="hover:opacity-80">Articles</a>
+        <a href="#contact" class="hover:opacity-80">Contact</a>
+        <a href="https://linkedin.com/in/arqumahmad" target="_blank" class="rounded-full border border-white/20 px-3 py-1 hover:bg-white/10 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-[#0A66C2]"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76s.78-1.76 1.75-1.76 1.75.79 1.75 1.76-.78 1.76-1.75 1.76zm13.5 11.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.89v1.36h.04c.4-.75 1.37-1.54 2.82-1.54 3.01 0 3.57 1.98 3.57 4.56v5.62z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO / SPEAKER FRAME (tall) -->
+  <section id="home" class="relative">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center pt-10 md:pt-16 pb-12 md:pb-20">
+        <div class="md:col-span-6 reveal">
+          <span class="block text-3xl md:text-5xl font-extrabold text-indigo-400 mb-2">HEY!</span>
+          <h1 class="text-4xl md:text-6xl font-black leading-tight tracking-tight mb-2">I'm Arqum</h1>
+          <p class="mt-2 text-lg md:text-xl text-white/80 max-w-xl">My passion is unlocking the hidden potential in every machine, process, and factory. I help organizations embrace Industry 4.0 by turning complexity into clear, actionable solutions. Using IoT, Digital Twins, AI, and Data Analytics, I design strategies that modernize operations, boost efficiency, and build future-ready factories. My focus is on empowering people, simplifying transformation, and ensuring innovation delivers measurable results.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#contact" class="glass px-5 py-3 text-sm font-semibold hover:opacity-90">Book me to speak</a>
+            <a href="#experience" class="px-5 py-3 text-sm font-semibold border border-white/20 rounded-xl hover:bg-white/10">View my CV</a>
+          </div>
+          <div class="mt-6 text-sm text-white/70">Based in Genova, Italy • Available for keynotes, panels, and advisory</div>
+        </div>  
+        <div class="md:col-span-6 reveal">
+          <!-- Tall stage-shot frame placeholder -->
+          <div class="relative aspect-[3/4] w-full glass overflow-hidden">
+            <img src="src/assets/photo.jpg?v=1" alt="Arqum Ahmad stage shot" class="absolute inset-0 w-full h-full object-cover object-center opacity-90" />
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/60 via-ink/10"></div>
+            <div class="absolute bottom-0 p-4">
+              <p class="text-sm text-white/80">Stage shot — Arqum Ahmad</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-10 md:py-16">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-7 reveal">
+          <div class="glass p-6 md:p-8">
+            <h2 class="text-2xl md:text-3xl font-bold mb-2">About Me</h2>
+            <div class="space-y-5 text-white/90">
+              <div>
+                <span class="text-lg font-bold">🚀 WHAT DRIVES ME</span>
+                <p class="mt-1">Every machine, process, and factory has untapped potential. In the age of <span class="font-semibold">Industry 4.0</span>, we have the tools to unlock that potential. Technologies like <span class="font-semibold">Digital Twins</span>, <span class="font-semibold">IoT</span>, and <span class="font-semibold">Data Analytics</span> help machines tell their story, turning what was once hidden in a <span class="font-semibold">black box</span> into a <span class="font-semibold">clear glass box</span>.<br>I'm passionate about helping people unlock these opportunities to create smarter, more efficient, and future-ready factories.</p>
+              </div>
+              <div>
+                <span class="text-lg font-bold">🎯 WHAT I DO</span>
+                <ul class="mt-1 list-disc list-inside space-y-1">
+                  <li>✈️ At <span class="font-semibold">Leonardo, Italy</span>, I lead R&D efforts for the development and deployment of innovative Industry 4.0 Solutions for Aerospace manufacturing processes.</li>
+                  <li>🏢 Founded <span class="font-semibold">Antrax Labs</span>, a company dedicated to helping manufacturers digitize their operations.</li>
+                  <li>🎤 I deliver <span class="font-semibold">keynotes and panel discussions</span> on Industry 4.0, digital transformation strategies, and emerging technologies. I also advocate for open-source innovation while collaborating with organizations like ISA to shape the future of manufacturing standards.</li>
+                </ul>
+              </div>
+              <div>
+                <span class="text-lg font-bold">🤝 HOW I SUPPORT</span>
+                <ul class="mt-1 list-disc list-inside space-y-1">
+                  <li>📝 Develop tailored strategies and roadmaps for digital transformation journeys.</li>
+                  <li>🚀 Modernize operations using technologies like IoT, AI, Big Data, and Digital Twins.</li>
+                  <li>🛠️ PoC & Piloting with Open-Source to validate, then scale for broader impact.</li>
+                  <li>🧩 Simplify complex challenges into clear, actionable solutions that drive measurable value.</li>
+                  <li>🎯 Build sustainable, future-proof processes that align with business goals.</li>
+                </ul>
+              </div>
+              <div>
+                <span class="text-lg font-bold">💡 WHY THIS MATTERS TO ME</span>
+                <p class="mt-1">Digital transformation is more than implementing technology; it's about empowering people, enhancing processes, and connecting innovation with real-world manufacturing challenges. It's about creating factories that are efficient, adaptable, and ready for the future. I believe the best solutions come from collaboration. My approach focuses on simplifying complexity, building trust, and ensuring everyone involved feels confident and aligned.</p>
+              </div>
+              <div>
+                <span class="text-lg font-bold">📞 CONTACT</span>
+                <p class="mt-1">Let’s connect! Whether you're interested in exploring Industry 4.0 strategies, discussing the future of manufacturing, or sharing ideas on digital transformation, I'd love to hear from you.<br>Reach out here on LinkedIn or email at <a href="mailto:arqumahmad.work@gmail.com" class="underline hover:opacity-80">arqumahmad.work@gmail.com</a>.<br><span class="font-semibold">Together, let's unlock the potential in your operations and build a factory ready for the future.</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-5 reveal">
+          <div class="glass p-6 md:p-8">
+            <h3 class="text-xl font-semibold">Fast facts</h3>
+            <ul class="mt-4 space-y-2 text-sm text-white/80">
+              
+              <li><span class="font-semibold">Industry Engagement:</span> ISA 95 (Voting Member), ISA SM/IIoT WG, GLG Expert Network, Teagus by AlphaSense</li>
+              <li><span class="font-semibold">Certifications:</span> IBM Product Management (2025), Google PMP (2023), Leadership (UIUC), Digitalisation in Aerospace (TUM), YC Startup School</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE / CV -->
+  <section id="experience" class="py-10 md:py-16">
+    <div class="mx-auto max-w-7xl px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6">Experience</h2>
+      <div id="experienceList" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+      <div class="mt-6 text-sm text-white/70">Full CV available upon request.</div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section id="events" class="py-10 md:py-16">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="flex items-end justify-between gap-4 mb-6">
+        <h2 class="text-2xl md:text-3xl font-bold">Events</h2>
+        <div class="text-sm text-white/70">Easily add new events by editing the <code>events</code> array below.</div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="glass p-6">
+          <h3 class="text-xl font-semibold">Upcoming</h3>
+          <div id="upcomingEvents" class="mt-4 space-y-4"></div>
+        </div>
+        <div class="glass p-6">
+          <h3 class="text-xl font-semibold">Past</h3>
+          <div id="pastEvents" class="mt-4 space-y-4"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLES / PUBLICATIONS -->
+  <section id="articles" class="py-10 md:py-16">
+    <div class="mx-auto max-w-7xl px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6">Articles & Publications</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Simple cards fed by JS array -->
+        <div id="articleGrid" class="grid grid-cols-1 gap-6"></div>
+        <!-- Embedded LinkedIn post placeholder -->
+        <div class="glass p-0 overflow-hidden">
+          <div class="p-6 pb-0">
+            <h3 class="text-xl font-semibold">Latest on LinkedIn</h3>
+            <p class="text-white/70 text-sm mt-2">Latest posts from LinkedIn are embedded below.</p>
+          </div>
+          <iframe src='https://widgets.sociablekit.com/linkedin-profile-posts/iframe/25586822' frameborder='0' width='100%' height='1000'></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-10 md:py-16">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+        <div class="lg:col-span-2 glass p-6 md:p-8 reveal">
+          <h2 class="text-2xl md:text-3xl font-bold">Contact</h2>
+          <p class="mt-3 text-white/80">For speaking, advisory, or media—reach out directly or use the form.</p>
+          <form class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4" action="https://formspree.io/f/your-id" method="POST">
+            <input class="glass px-4 py-3 placeholder-white/50" placeholder="Your name" name="name" required />
+            <input class="glass px-4 py-3 placeholder-white/50" placeholder="Email" name="email" type="email" required />
+            <input class="sm:col-span-2 glass px-4 py-3 placeholder-white/50" placeholder="Subject" name="subject" />
+            <textarea class="sm:col-span-2 glass px-4 py-3 placeholder-white/50" placeholder="Message" name="message" rows="6" required></textarea>
+            <button class="sm:col-span-2 glass px-5 py-3 font-semibold hover:opacity-90" type="submit">Send</button>
+          </form>
+        </div>
+        <div class="glass p-6 md:p-8 reveal">
+          <h3 class="text-xl font-semibold">Direct</h3>
+          <ul class="mt-4 space-y-2 text-sm text-white/80">
+            <li><span class="font-semibold">Email:</span> <a class="underline hover:opacity-80" href="mailto:arqumahmad@gmail.com">arqumahmad@gmail.com</a></li>
+            <li><span class="font-semibold">Phone:</span> <a class="underline hover:opacity-80" href="tel:+393338979196">+39 333 897 9196</a></li>
+            <li><span class="font-semibold">LinkedIn:</span> <a class="underline hover:opacity-80" target="_blank" href="https://linkedin.com/in/arqumahmad">/in/arqumahmad</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10 border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-white/60 text-sm">© <span id="year"></span> Arqum Ahmad. All rights reserved.</p>
+      <p class="text-white/60 text-sm">Built with ❤️ using Tailwind CSS</p>
+    </div>
+  </footer>
+
+  <!-- DATA + RENDER SCRIPTS -->
+  <script src="src/data/data.js"></script>
+  <script src="src/scripts/scripts.js"></script>
+</body>
+</html>
