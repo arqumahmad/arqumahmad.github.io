@@ -6,12 +6,6 @@ const experience = [
     location: 'Genova, Italy',
     period: 'Jan 2023 – Present',
     bullets: [
-      'Technical lead for AI/IoT adoption across 10+ global manufacturing sites.',
-      'Designed reference architectures and real‑time data pipelines across MQTT, databases, cloud‑edge; enabled low‑latency analytics and adaptive control.',
-      'Published solution playbooks and technical guides adopted by 5,000+ users.',
-      'Led vendor/system‑integrator alignment and solution governance.',
-      'Represented the Future Factory program at summits, panels, and webinars; delivered live demos.',
-      'Mentored cross‑functional teams; delivered 6+ pilots incl. predictive maintenance and energy optimization.'
     ]
   },
   {
@@ -20,9 +14,7 @@ const experience = [
     location: 'Pomigliano d’Arco, Italy',
     period: 'Nov 2021 – Jan 2023',
     bullets: [
-      'Scouted market/scientific tech for high‑performance aircraft production.',
-      'Defined R&D roadmap for deploying Industry 4.0 solutions.',
-      'Collaborated across Engineering, Production, R&D, and partners to deliver high‑risk/high‑return projects.'
+      
     ]
   },
   {
@@ -51,7 +43,36 @@ const events = [
 ];
 
 const articles = [
-  { title: '12 Thinking Traps to Avoid in Digital Transformation', url: '#', outlet: 'InsightForge Journal', year: '2024' },
-  { title: '12 Ways to Spot an Innovation Killer', url: '#', outlet: 'InsightForge Journal', year: '2024' },
-  { title: 'Industry 4.0 × Digital Twins: Practical Patterns', url: '#', outlet: 'Conference Notes', year: '2023' }
+  { title: ' From Raw Data to Action: How to Build an Effective Predictive Maintenance Data Pipeline', 
+    url: 'https://www.linkedin.com/pulse/from-raw-data-action-building-effective-predictive-pipeline-ahmad-spvbf/?trackingId=0TKpDRxTQomg1ilvyxraCg%3D%3D', 
+    description: 'Industry 4.0 and IIoT are transforming maintenance from reactive fixes to proactive, data-driven strategies. In this guide, Industry 4.0 expert Arqum Ahmad shares a step-by-step roadmap for building a robust predictive maintenance data pipeline—from choosing the right sensors and securing data transmission to cleaning datasets and overcoming organisational challenges. Packed with real-world examples, best practices, and proven strategies, this article will help manufacturers unlock actionable insights, reduce downtime, and maximise asset performance.' },
+  { title: ' MES vs IIoT: Understanding the Difference & Debunking the Myths', 
+    url: 'https://www.linkedin.com/pulse/mes-vs-iiot-understanding-difference-decoding-myths-arqum-ahmad-z3ozf/?trackingId=zQJV0p3AR8%2BiR%2FPsAe1rog%3D%3D', 
+    description: 'In the Industry 4.0 era, Manufacturing Execution Systems (MES) and the Industrial Internet of Things (IIoT) are often misunderstood as competing technologies—but in reality, they play complementary roles. In this article, Industry 4.0 expert Arqum Ahmad breaks down what MES and IIoT really are, how they differ, and how they can work together to create smarter, more agile manufacturing. Packed with clear definitions, real-world use cases, and strategic guidance, this guide helps decision-makers, engineers, and executives choose the right approach for their digital transformation journey.' },
+  { title: 'How to Prepare Your Shop Floor for IIoT: A Comprehensive Guide', 
+    url: 'https://www.linkedin.com/pulse/how-prepare-your-shop-floor-iiot-comprehensive-guide-arqum-ahmad/?trackingId=zQJV0p3AR8%2BiR%2FPsAe1rog%3D%3D', 
+    description: 'The Industrial Internet of Things (IIoT) is transforming manufacturing, but successful adoption requires more than just installing new technology. In this guide, Industry 4.0 expert Arqum Ahmad outlines a step-by-step approach to ready your shop floor for the IIoT revolution—covering how to build a data-driven culture, choose scalable solutions, and safeguard your most valuable asset: data. Packed with practical strategies, real-world tips, and actionable insights, this article equips manufacturers to unlock efficiency, productivity, and innovation in the era of smart manufacturing.' }
+];
+
+const projects = [
+  {
+    title: 'Centralized Industrial Data Platform',
+    description: 'Designed and deployed a global platform to collect, store, and analyze manufacturing data in real time, enabling advanced analytics and predictive insights.'
+  },
+  {
+    title: 'Smart Building Monitoring & Energy Optimization',
+    description: 'Integrated building management systems with IoT sensor networks to monitor and optimize energy consumption across multiple facilities.'
+  },
+  {
+    title: 'Enterprise Energy Management System',
+    description: 'Developed a centralized solution for real-time visualization, forecasting, and optimization of energy and gas consumption across production sites.'
+  },
+  {
+    title: 'Connected Shopfloor & OEE Analytics',
+    description: 'Integrated production equipment with enterprise systems to enable automated data acquisition, real-time performance tracking, and efficiency improvement.'
+  },
+  {
+    title: 'Predictive Maintenance for CNC Operations',
+    description: 'Implemented sensor-based monitoring and analytics to anticipate failures, reduce downtime, and extend equipment lifespan.'
+  }
 ];

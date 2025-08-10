@@ -38,11 +38,12 @@ function renderEvents() {
 
 function renderArticles() {
   const g = document.getElementById('articleGrid');
+  g.innerHTML = '';
   articles.forEach(a => {
-    g.appendChild(h(`<a class="glass p-6 block hover:opacity-90" href="${a.url}" target="_blank">
-      <div class="text-sm text-white/60">${a.outlet} • ${a.year}</div>
+    g.appendChild(h(`<a class="glass p-6 block hover:opacity-90" href="${a.url || '#'}" target="_blank">
       <div class="mt-2 font-semibold">${a.title}</div>
-      <div class="mt-3 text-sm underline">Read →</div>
+      <div class="mt-3 text-sm text-white/80">${a.description}</div>
+      <div class="mt-3 text-sm underline">${a.url ? 'Read →' : ''}</div>
     </a>`));
   });
 }
@@ -64,3 +65,18 @@ renderExperience();
 renderEvents();
 renderArticles();
 document.getElementById('year').textContent = new Date().getFullYear();
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Render Projects
+  if (typeof projects !== 'undefined' && Array.isArray(projects)) {
+    const projectsGrid = document.getElementById('projectsGrid');
+    if (projectsGrid) {
+      projectsGrid.innerHTML = projects.map(project => `
+        <div class="glass p-8 flex flex-col gap-3">
+          <h3 class="text-lg font-semibold mb-2">${project.title}</h3>
+          <p>${project.description}</p>
+        </div>
+      `).join('');
+    }
+  }
+});
